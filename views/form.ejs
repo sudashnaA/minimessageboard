@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div id="container">
+        <h1><%= title %></h1>
+        <form id="newMessageForm" method="POST" action="/new">
+            <label for="text">Text: </label>
+            <input id="text" name="text" type="text">
+
+            <label for="user">User:</label>
+            <input id="user" name="user" type="text">
+
+            <input type="submit">
+        </form>
+    </div>
+      
+  </body>
+</html>

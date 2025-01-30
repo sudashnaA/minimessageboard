@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div id="container2">
+        <div id="titlecontainer">
+            <h1><%= title %></h1>
+            <p><a href="/">Return</a></p>
+        </div>
+        <div id="messagecontainer">
+            <ul>
+                <li><strong>Text:</strong> <%= message.text %></li>
+                <li><strong>User:</strong> <%= message.user %></li>
+                <li><strong>Date:</strong> <%= message.added %></li>
+            </ul>
+        </div>
+    </div>
+      
+  </body>
+</html>

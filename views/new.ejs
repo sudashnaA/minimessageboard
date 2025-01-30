@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Homepage</title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <h1>About</h1>
+    <% aboutContent.forEach(item => { %>
+        <p><%= item %></p>
+    <% }) %>
+    <%- include('footer') %>
+  </body>
+</html>

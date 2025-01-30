@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div id="container2">
+      <div id="titlecontainer">
+        <h1><%= title %></h1>
+        <p><a href="new">New Message</a></p>
+      </div>
+      <div id="messagecontainer">
+        <ol>
+            <% messages.forEach((message) => { %>
+              <div id="message">
+              <li>
+                <%- include('message', {message: message}); %>
+              </li>
+              </div>
+            <% }); %>
+        </ol>
+      </div>
+    </div>
+      
+  </body>
+</html>
