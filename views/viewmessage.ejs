@@ -1,7 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="/style.css">
-    <title>Homepage</title>
+    <title><%= title %></title>
   </head>
   <body>
     <div id="container2">
@@ -12,8 +12,8 @@
         <div id="messagecontainer">
             <ul>
                 <li><strong>Text:</strong> <%= message.text %></li>
-                <li><strong>User:</strong> <%= message.user %></li>
-                <li><strong>Date:</strong> <%= message.added %></li>
+                <li><strong>User:</strong> <%= message.username %></li>
+                <li><strong>Date:</strong> <%= message.timestamp %></li>
             </ul>
         </div>
     </div>
